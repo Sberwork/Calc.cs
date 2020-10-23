@@ -22,8 +22,13 @@ namespace WebApplication3.Controllers
                     c.Result = c.Number1 * c.Number2;
                     break;
                 case '/':
-                    c.Result = c.Number1 / c.Number2;
+                    if(c.Number2 != 0)
+                    {
+                        c.Result = c.Number1 / c.Number2;
+                        break;
+                    }
                     break;
+              
             }
             return View(c);
         }

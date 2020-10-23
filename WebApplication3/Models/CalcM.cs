@@ -12,5 +12,6 @@ namespace WebApplication3.Models
         public int Number2 {get; set;}
         public char Op {get; set;}
         public int Result { get; set; }
+
     }
 }
