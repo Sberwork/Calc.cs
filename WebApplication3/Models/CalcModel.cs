@@ -6,12 +6,12 @@ using System.Web;
 
 namespace WebApplication3.Models
 {
-    public class CalcM
+    public class CalcModel
     {
-        public int Number1 {get; set;}
-        public int Number2 {get; set;}
+        public double Number1 {get; set;}
+        public double Number2 {get; set;}
         public char Op {get; set;}
-        public int Result { get; set; }
+        public double Result { get; set; }
 
     }
 }

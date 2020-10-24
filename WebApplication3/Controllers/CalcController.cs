@@ -9,8 +9,9 @@ namespace WebApplication3.Controllers
 {
     public class CalcController : Controller
     {
-        public IActionResult Index(CalcM c)
+        public IActionResult Index(CalcModel c)
         {
+            c.Result = 0;
             switch(c.Op)
             {
                 case '+': c.Result = c.Number1 + c.Number2;
@@ -30,6 +31,8 @@ namespace WebApplication3.Controllers
                     break;
               
             }
+            c.Number2 = c.Result;
+            c.Number1 = 0;
             return View(c);
         }
 
