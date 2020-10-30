@@ -26,7 +26,6 @@ namespace WebApplication3.Controllers
                     if(c.Number2 != 0)
                     {
                         c.Result = c.Number1 / c.Number2;
-                        break;
                     }
                     break;
               
